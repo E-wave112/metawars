@@ -21,9 +21,7 @@ createConnection({
     cli: {
         migrationsDir: "migration"
     },
-    extra:{
-        ssl:true,
-    },
+    ssl:true,
     synchronize: true,
     logging: true,
 }).then(connection => {
