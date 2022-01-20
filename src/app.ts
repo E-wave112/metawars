@@ -22,9 +22,10 @@ createConnection({
     migrations: ["migration/*.js"],
     cli: {
         migrationsDir: "migration"
-
     },
-    ssl:true,
+    extra:{
+        ssl:true,
+    },
     synchronize: true,
     logging: true,
 }).then(connection => {
