@@ -1,0 +1,1 @@
+export const STARWARS_BASE_URL:string = "https://swapi.py4e.com"
