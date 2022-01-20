@@ -28,33 +28,33 @@ export abstract class CrudService {
         return await entity.findOne(criteria)
     };
 
-      /**
-   * Get all method
-   * Get the array that matches filter
-   *
-   * @param filter
-   */
+    /**
+ * Get all method
+ * Get the array that matches filter
+ *
+ * @param filter
+ */
     public all = async (filter: any = {}): Promise<any[]> => {
         const entity = getRepository(this.entity)
         return await entity.find(filter)
     }
 
-    
-      /**
-   * Create method
-   * create a new entity instance
-   *
-   * @param object
-   */
-  public create = async (object: any): Promise<any> => {
-    const entity = getRepository(this.entity)
-    try {
-      let newEntity = entity.create(object)
-      console.log(newEntity)
-      return await entity.save(newEntity)
-    } catch (e: any) {
-      throwError(e.message)
-    }
-  };
+
+    /**
+ * Create method
+ * create a new entity instance
+ *
+ * @param object
+ */
+    public create = async (object: any): Promise<any> => {
+        const entity = getRepository(this.entity)
+        try {
+            let newEntity = entity.create(object)
+            console.log(newEntity)
+            return await entity.save(newEntity)
+        } catch (e: any) {
+            throwError(e.message)
+        }
+    };
 
 }

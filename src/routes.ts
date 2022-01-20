@@ -13,9 +13,9 @@ class allRoutes {
         this.router.use("/test", (req: Request, res: Response) => {
             res.status(200).send('hello world!')
         });
-        this.router.use('/movies',moviesRoutes)
-        this.router.use('/comments',commentsRoutes)
-        this.router.use('/character-list',characterRoutes)
+        this.router.use('/movies', moviesRoutes)
+        this.router.use('/comments', commentsRoutes)
+        this.router.use('/character-list', characterRoutes)
     }
 
 }

@@ -11,12 +11,12 @@ class characterRoutes {
     }
 
     private routes(): void {
-        
-        this.router.get('/data', 
-        validator.useBodyValidator(characterValidator.movieInputValidator),
-        characterController.getCharacters)
+
+        this.router.get('/data',
+            validator.useBodyValidator(characterValidator.movieInputValidator),
+            characterController.getCharacters)
         // this.router.get('/all', moviesController.getAllMoviesController)
-        
+
 
     }
 }

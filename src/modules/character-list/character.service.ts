@@ -16,7 +16,7 @@ class CharacterListService extends CrudService {
             // get the urls of the character-list from the characterlist column
             let characters: object[] = []
             const characterLists = getMovie.characterList
-            for (let char=0;char<characterLists.length;char++){
+            for (let char = 0; char < characterLists.length; char++) {
                 const axiosResponse = await this.axiosService.fetchData(characterLists[char])
                 characters.push(axiosResponse.data)
             }
@@ -28,18 +28,19 @@ class CharacterListService extends CrudService {
             if (!queryparam) sortedCharacters = characters
             let filteredCharacters;
             // filter characters by various params
-            filteredCharacters = this.customClass.customFilter(sortedCharacters, queryparam2) 
+            filteredCharacters = this.customClass.customFilter(sortedCharacters, queryparam2)
             if (!queryparam2) filteredCharacters = sortedCharacters
-            
-            
+
+
             // filteredCharacters = this.customClass.customFilter(sortedCharacters, queryparam2) ? this.customClass.customFilter(sortedCharacters, queryparam2) : sortedCharacters
             // return the total height and number of characters
             const totalHeights = this.customClass.getSumOfHeights(filteredCharacters)
             const totalCharacters = filteredCharacters.length
-            return {filteredCharacters,metadata:{
-                totalHeights,totalCharacters
+            return {
+                filteredCharacters, metadata: {
+                    totalHeights, totalCharacters
+                }
             }
-        }
 
         } catch (err: any) {
             console.error(err)

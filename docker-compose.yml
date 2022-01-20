@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  web: 
+    image: ewave112/metawars:prod
+    build:
+      context: .
+      target: prod
+    container_name: metawars
+    restart: always
+    ports: 
+      - "7000:7000"
+    volumes: 
+      - .:/app
+    env_file: 
+      - .env
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PORT=${DB_PORT}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+
+
+    networks: 
+      - metawars-network
+
+
+networks: 
+  nodecommerce-network:
+    name: metawars-network

@@ -11,10 +11,6 @@ class MovieDataRoutes {
     private routes(): void {
         this.router.get('/', moviesController.createMovieDB)
         this.router.get('/all', moviesController.getAllMoviesController)
-        // this.router.get('/:id', privateDealsController.getSinglePrivateDealController)
-        // this.router.get('/', privateDealsController.getAllPrivateDealsController)
-        // this.router.get('/popular', privateDealsController.getPopularPrivateDealsController)
-
     }
 }
 

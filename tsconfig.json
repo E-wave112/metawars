@@ -17,9 +17,12 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false, 
+    "strict": false,
     "alwaysStrict": true,
-    "typeRoots": ["./global.d.ts", "./node_modules/@types"],
+    "typeRoots": [
+      "./global.d.ts",
+      "./node_modules/@types"
+    ],
     "skipLibCheck": false,
   },
   "include": [
