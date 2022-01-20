@@ -10,9 +10,7 @@ import { Request, Response } from "express";
 config()
 
 createConnection({
-    name:"default",
     type: "postgres",
-    host: process.env.DB_HOST,
     port: 5432,
     url:process.env.DATABASE_URL,
     // database: "database-1",  
