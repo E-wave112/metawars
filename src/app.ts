@@ -24,6 +24,7 @@ createConnection({
         migrationsDir: "migration"
 
     },
+    ssl:true,
     synchronize: true,
     logging: true,
 }).then(connection => {
