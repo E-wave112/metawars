@@ -10,12 +10,11 @@ import { Request, Response } from "express";
 config()
 
 createConnection({
+    name:"default",
     type: "postgres",
     host: process.env.DB_HOST,
     port: 5432,
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    url:process.env.DATABASE_URL,
     // database: "database-1",  
     entities: [
         Comments, Movie
@@ -26,7 +25,7 @@ createConnection({
 
     },
     synchronize: true,
-    logging: false,
+    logging: true,
 }).then(connection => {
     // here you can start to work with your entities
     const app = express()
