@@ -10,7 +10,7 @@ class allRoutes {
     }
 
     private initRoutes(): void {
-        this.router.use("/", (req: Request, res: Response) => {
+        this.router.get("/", (req: Request, res: Response) => {
             res.status(200).send('welcome to metawars!, head over to https://documenter.getpostman.com/view/11690328/UVXoktAc to view our docs')
         });
         this.router.use('/movies', moviesRoutes)
