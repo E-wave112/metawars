@@ -31,8 +31,6 @@ class CharacterListService extends CrudService {
             filteredCharacters = this.customClass.customFilter(sortedCharacters, queryparam2)
             if (!queryparam2) filteredCharacters = sortedCharacters
 
-
-            // filteredCharacters = this.customClass.customFilter(sortedCharacters, queryparam2) ? this.customClass.customFilter(sortedCharacters, queryparam2) : sortedCharacters
             // return the total height and number of characters
             const totalHeights = this.customClass.getSumOfHeights(filteredCharacters)
             const totalCharacters = filteredCharacters.length

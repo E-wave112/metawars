@@ -15,7 +15,7 @@ class characterRoutes {
         this.router.get('/data',
             validator.useBodyValidator(characterValidator.movieInputValidator),
             characterController.getCharacters)
-        // this.router.get('/all', moviesController.getAllMoviesController)
+        
 
 
     }

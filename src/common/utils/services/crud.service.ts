@@ -3,7 +3,7 @@ import { throwError } from "../error";
 
 export abstract class CrudService {
     abstract entity: any
-    // abstract entityRepo: any
+    
 
     /**
    * Get a single object method by id
