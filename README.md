@@ -42,8 +42,8 @@ To run the application, use the following command:
 $ docker-compose up
 ```
 
-The server will be running on [localhost:3000](http://0.0.0.0:3000)
+ - The server will be running on [localhost:3000](http://0.0.0.0:3000)
 
-Find my Docker image on the cloud [here](https://hub.docker.com/repository/docker/ewave112/meta-image)
+ - Find my Docker image on the cloud [here](https://hub.docker.com/repository/docker/ewave112/meta-image)
 
-A useful resource on how to push your docker image to [DockerHub](https://hub.docker.com)  can be found [here](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
+ - A useful resource on how to push your docker image to [DockerHub](https://hub.docker.com)  can be found [here](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
