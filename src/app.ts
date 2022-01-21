@@ -12,7 +12,7 @@ config()
 createConnection({
     type: "postgres",
     port: 5432,
-    url:process.env.DATABASE_URL,
+    url:process.env.DB_URI,
     // database: "database-1",  
     entities: [
         Comments, Movie
