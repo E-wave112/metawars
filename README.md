@@ -3,3 +3,4 @@
 
 - Live URL [here](https://metacare-ass.herokuapp.com/)
 - Find the API documentation [here](https://documenter.getpostman.com/view/11690328/UVXoktAc)
+- Docker image [here](https://hub.docker.com/repository/docker/ewave112/meta-image)
