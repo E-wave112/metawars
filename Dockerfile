@@ -6,11 +6,11 @@ COPY package*.json ./
 
 RUN yarn
 
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 
 
 EXPOSE 3000
 
 COPY  . .
 
-CMD ["yarn","start" ]
+CMD ["yarn","start:dev"]
