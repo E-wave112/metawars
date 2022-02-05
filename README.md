@@ -17,7 +17,7 @@ or
 $ yarn
 
 ```
-Then you can then finally start the devlopment server with the command
+Then you can then finally start the development server with the command
 
 ```
 $ npm run dev
