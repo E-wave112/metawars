@@ -36,7 +36,7 @@ docker-compose up --build
 ```
 ### Running the Dev Docker container
 
-To run the application, use the following command:
+To run the container, use the following command:
 
 ```
 $ docker-compose up
